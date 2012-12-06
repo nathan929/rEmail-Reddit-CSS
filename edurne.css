@@ -521,3 +521,11 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 .side a[href='#icon-eye']::before           {background-position: -16px -89px;}
 
 /* SUBREDDIT-SPECIFIC STYLES - add you own styles below without modifying the code above.*/
+
+/*replace "readers" with something else*/  
+div.titlebox span.word {  
+display: none  
+}  
+div.titlebox span.number:after {  
+content: " ninjas"  
+}
