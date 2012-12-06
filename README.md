@@ -1,4 +1,5 @@
-Edurne-CSS-Theme-for-Reddit
+The CSS behind the [/r/Email](http://www.reddit.com/r/email/) subreddit
 ===========================
 
-A CSS theme for styling subreddits in Reddit.com
+
+Based on the Edurne-CSS-Theme-for-Reddit - a great framework!
