@@ -1,4 +1,4 @@
-/* ==Edurne Reddit CSS Theme v5.1.5 - (http://www.reddit.com/r/edurne/)== */
+/* ==Based on the Edurne Reddit CSS Theme v5.1.5 - (http://www.reddit.com/r/edurne/)== */
 
 /* GENERAL */
 body { position:relative; font-family:arial, helvetica, sans-serif; }
@@ -520,7 +520,7 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 .side a[href='#icon-bell']::before          {background-position: -35px -32px;}
 .side a[href='#icon-eye']::before           {background-position: -16px -89px;}
 
-/* SUBREDDIT-SPECIFIC STYLES - add you own styles below without modifying the code above.*/
+/* SUBREDDIT-SPECIFIC STYLES - add your own styles below without modifying the code above.*/
 
 /*replace "readers" with something else*/  
 div.titlebox span.word {  
@@ -528,4 +528,47 @@ display: none
 }  
 div.titlebox span.number:after {  
 content: " ninjas"  
+}
+
+/*Changing 'MODERATORS in sidebar*/  
+
+.sidecontentbox h1:not(:first-child) {
+font-size: 0pt !important
+}
+
+/* Flair */
+
+.userflair .trustflair {
+border: none !important;
+padding:0px;
+background: url(%%sprites-05%%) no-repeat -92px -8px;
+display:inline-block;
+}
+
+/* Sticky Notes */
+body >.content >.sharelink ~ .sitetable:before {
+content: "Sticky Note Message"; 
+background-color: #F6E69F;
+border: 1px solid orange;
+font-family: verdana, sans-serif; 
+font-size: 14px; 
+color: #555;
+text-align: left;
+display: block;
+padding:5px 10px;
+margin:5px 305px 5px 0px;
+border-radius: 8px; 
+}
+
+/* Non Subscribers note */
+.content:before{
+content: url(%%warning%%) " You're not subscribed to r/Email yet! Click the subscribe button on the right to add the subreddit to your frontpage ";
+margin:4px;
+color:#2e2e2e;
+}
+.subscriber .content:before{
+content: " " !important;
+}
+.side .content:before {
+content: " " !important
 }
